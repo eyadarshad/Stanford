@@ -357,7 +357,9 @@
     .info-links {
         gap: 15px;
     }
-
+    .hero {
+        height: 1278px;
+    }
     .hero-text {
         font-size: 60px;
     }
@@ -384,7 +386,9 @@
     .top-header {
         padding: 15px 20px;
     }
-
+    .hero {
+        height: 800px;
+    }
     .hero-text {
         font-size: 48px;
     }
@@ -430,7 +434,7 @@
         font-size: 20px;
     }
     .hero {
-        height: 1000px;
+        height: 600px;
     }
     .hero-text {
         font-size: 36px;

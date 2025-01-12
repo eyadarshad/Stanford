@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+.main-body {
+    text-align: center;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Header for Nav-Bar */
+.header-container {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: linear-gradient(to bottom, rgba(10, 10, 10, 0.8) 0%, rgba(67, 62, 62, 0.7) 50%, transparent 100%);
+}
+
+.top-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: white;
+}
+
+.university-name {
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+.info-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-text {
+    font-size: 16px;
+}
+
+.info-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.info-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.main-nav {
+    padding: 0 30px;
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('https://www.stanford.edu/wp-content/uploads/2023/10/Hero-3-2-2048x1362.jpg') center/cover;
+    background-attachment: fixed;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 100px;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* Societal Mission Section */
+.mission {
+    background: whitesmoke;
+    padding-top: 75px;
+    padding-bottom: 125px;
+}
+
+.mission h2 {
+    margin-top: 15px;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.mission p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Campus Life Section */
+.campus-life {
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.campus-life h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.campus-life-subtitle {
+    font-size: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.campus-life-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.campus-life-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.campus-life-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.campus-life-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.campus-life-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.campus-life-link {
+    color: #006CB8;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+}
+
+.campus-life-link:after {
+    content: "›";
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.more-about-btn,
+.cta-button {
+    display: block;
+    width: fit-content;
+    margin: 40px auto 0;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.more-about-btn {
+    background-color: #8C1515;
+}
+
+.cta-button {
+    background-color: #B22234;
+}
+
+/* Research Section */
+.container {
+    background: whitesmoke;
+    padding: 40px 20px;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.stat-item {
+    padding: 20px;
+}
+
+.stat-number {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+.footer {
+    background: #fff;
+    padding: 40px 20px;
+    border-top: 1px solid #d5d5d5;
+}
+
+.footer-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    color: #820000;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-button {
+    padding: 8px 15px;
+    border: 1px solid #2e2d29;
+    color: #2e2d29;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+.bottom-footer {
+    background: #8C1515;
+    padding: 20px;
+    color: white;
+}
+
+.bottom-footer-content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.bottom-footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.social-icons {
+    text-align: center;
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: #2e2d29;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .nav-list {
+        gap: 20px;
+    }
+
+    .info-links {
+        gap: 15px;
+    }
+
+    .hero-text {
+        font-size: 60px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .info-links,
+    .info-text {
+        display: none;
+    }
+
+    .top-header {
+        padding: 15px 20px;
+    }
+
+    .hero-text {
+        font-size: 48px;
+    }
+
+    .mission h2 {
+        font-size: 30px;
+    }
+
+    .mission p {
+        font-size: 16px;
+    }
+
+    .stat-number {
+        font-size: 30px;
+    }
+
+    .bottom-footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .bottom-footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .campus-life-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .top-header {
+        padding: 10px 15px;
+    }
+
+    .university-name {
+        font-size: 20px;
+    }
+
+    .hero-text {
+        font-size: 36px;
+    }
+
+    .mission {
+        padding: 40px 20px;
+    }
+
+    .mission h2 {
+        font-size: 24px;
+    }
+
+    .stat-number {
+        font-size: 24px;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-buttons {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .campus-life-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .campus-life h1 {
+        font-size: 36px;
+    }
+
+    .campus-life-subtitle {
+        font-size: 18px;
+    }
+
+    .campus-life-title {
+        font-size: 20px;
+    }
+}
+/* The END:) */
